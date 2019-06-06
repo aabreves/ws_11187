@@ -123,7 +123,7 @@ pares atributo:valor
 
 NO ATRIBUTO style DE UM ELEMENTO HTML PODEMOS
 ESPECIFICAR UMA SEQUÊNCIA DE PARES atributo:valor PARA
-ESTILIZAÇÃO DA PÁGINA
+ESTILIZAÇÃO DO ELEMENTO
    CADA ELEMENTO DA SEQUENCIA É FORMADO POR UM PAR atributo:valor
    CADA ELEMENTO DA SEQUENCIA TERMINA COM ;
 
@@ -163,6 +163,54 @@ CORES:
 
       >> PESQUISAR SOBRE SISTEMAS DE NUMERAÇÃO
 
+
+
+   CSS
+
+      css inline        =>    atributo style dos elementos html
+
+      css incorporado   =>    <style> </style>
+
+      css externo       =>    <link />
+
+      QUANDO TRABALHAMOS COM O CSS INCORPORADO OU O CSS EXTERNO
+      PRECISAMOS DE UMA FORMA DE ESPECIFICAR (OU SELECIONAR) QUAL 
+      (OU QUAIS) ELEMENTOS SERÃO ESTILIZADOS.
+      
+      ESTA FORMA DE SELECIONAR O(S) ELEMENTO(S) É CHAMADA DE
+      "SELETOR"
+
+      TEMOS TRÊS DE TIPOS DE SELETORES:
+
+         SELETOR POR TAG      - utiliza a própria tag do html;
+         SELETOR POR ID       - utiliza o atributo id dos elementos html;
+         SELETOR POR CLASSE   - utiliza o atributo class dos elementos html;
+      
+      SINTAXE:
+
+         => POR TAG:
+
+         tag{ sequencia de pares atributo:valor }
+
+         => POR ID:
+         
+         #id_value{ sequencia de pares atributo:valor }
+
+         => POR CLASSE:
+
+         .class_name{ sequencia de pares atributo:valor }
+
+
+     PARA FACILITAR A LEITURA DO CÓDIGO, NORMALMENTE ESCREVEMOS O CSS
+     DA SEGUINTE FORMA:
+
+         seletor{
+            attr1:valor;
+            attr2:valor;
+            attr3:valor;
+            ...
+         }
+         
 
 
 

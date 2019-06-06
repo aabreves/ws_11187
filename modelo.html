@@ -11,6 +11,125 @@
       <meta name="viewport" 
             content="width=device-width, initial-scale=1.0"/>
       <title>webstandards 11187</title>
+      
+      <style>
+         *{}
+         
+         #divMain{
+            background-color: #000;
+            
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            
+            width: 800px;
+            height: 600px;
+         }
+         
+         header{
+            background-color: #666;
+            
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            
+            width: 800px;
+            height: 100px;
+         }
+         
+         #navMainOptions{
+            background-color: #0B2F3A;
+            
+            position: absolute;
+            left: 0px;
+            top: 100px;
+            
+            width: 800px;
+            height: 40px;
+         }
+         
+         #sctContent{
+            background-color: #bbb;
+            
+            position: absolute;
+            left: 0px;
+            top: 140px;
+            
+            width: 800px;
+            height: 420px
+         }
+         
+         #asdContentOptions{
+            background-color: #0B4C5F;
+            
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            
+            width: 120px;
+            height: 420px
+         }
+         
+         #divContent{
+            background-color: #eee;
+            
+            position: absolute;
+            left: 120px;
+            top: 0px;
+            
+            width: 680px;
+            height: 420px
+         }
+         
+         footer{
+            background-color: #0B2F3A;
+            
+            position: absolute;
+            left: 0px;
+            top: 560px;
+            
+            width: 800px;
+            height: 40px            
+         }
+         
+         h3, h5{
+            margin:0;
+            border:0;
+            padding:0;
+         }
+         
+         ul{
+            height:100%;
+            padding:0;
+            margin: 0;
+            margin-left:20px;
+            border:0;
+            list-style-type:none;
+         }
+         
+         ul li{
+            padding:0px;
+            height:100%;
+            margin:0;
+            margin-left:15px;
+            border:0;
+            display:inline;
+         }
+         
+         ul li a{
+            position:relative;
+            margin-left:15px;
+            top:10px;
+            height:100%;
+            padding:10px;
+            background-color:yellow;
+         }  
+         
+         ul li a:hover{
+            background-color: #fff;
+         }  
+         
+      </style>
    </head>   
    <body> <!-- TODO DOCUMENTO HTML TEM UM <body> -->
       <div id="divMain"> <!-- wrapper -->
@@ -25,13 +144,27 @@
                      Home
                   </a>
                </li>
+               <li>
+                  <a href="index.html"
+                     target="_self">
+                     Products
+                  </a>
+               </li>
+               <li>
+                  <a href="index.html"
+                     target="_self">
+                     About
+                  </a>
+               </li>
             </ul> <!-- <ul id="ulMainOptions"> -->
          </nav> <!-- <nav id="navMainOptions"> -->
-         <section id="sctContent">
-            <h5>CONTENT SECTION</h5>
+         <section id="sctContent">            
             <aside id="asdContentOptions">
                <p>aside</p>
             </aside>
+            <div id="divContent">
+               <h5>CONTENT SECTION</h5>
+            </div>
          </section> <!-- <section id="sctContent"> -->
          <footer id="ftrBottomBar">
          </footer> <!-- <footer id="ftrBottomBar"> -->
