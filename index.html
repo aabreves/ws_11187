@@ -14,15 +14,15 @@
 
       <style>
          *{
-            margin:0;
-            border:0;
-            padding:0;
+            margin: 0;
+            border: 0;
+            padding: 0;
          }
 
          #divMain{
             background-color: #000;
 
-            margin:0 auto;
+            margin: 0 auto;
 
             position: relative;
             left: 0px;
@@ -44,7 +44,7 @@
          }
 
          #navMainOptions{
-            background-color: #0B2F3A;
+            background-color: #aaa;
 
             position: absolute;
             left: 0px;
@@ -66,13 +66,13 @@
          }
 
          #asdContentOptions{
-            background-color: #0B4C5F;
+            background-color: #aaa;
 
             position: absolute;
             left: 0px;
             top: 0px;
 
-            width: 120px;
+            width: 160px;
             height: 420px;
          }
 
@@ -80,10 +80,10 @@
             background-color: #eee;
 
             position: absolute;
-            left: 120px;
+            left: 160px;
             top: 0px;
 
-            width: 680px;
+            width: 640px;
             height: 420px;
          }
 
@@ -99,40 +99,56 @@
          }
 
          h3, h5{
-            margin:0;
-            border:0;
-            padding:0;
+            position: relative;
+            width: 30%;
+            top: 40%;
+            margin: auto;
+            border: 0;
+            padding: 0;
          }
 
          ul{
-            height:100%;
-            padding:0;
+            height: 100%;
+            padding: 0;
             margin: 0;
-            margin-left:20px;
-            border:0;
-            list-style-type:none;
+            border: 0;
+            list-style-type: none;
          }
 
-         ul li{
-            padding:0px;
-            height:100%;
-            margin:0;
-            margin-left:15px;
-            border:0;
-            display:inline;
+         #ulMainOptions li{
+            padding: 0px;
+            margin: 0;
+            margin-left: 5px;
+            border: 0;
+            display: inline;
+         }
+
+         #ulMainOptions li a:hover{
+            background-color: #DBA901;
+         }
+
+         #ulLayouts li{
+            height: 30px;
+            width: 100%;
+         }
+
+         #ulLayouts li:hover{
+            background-color: #DBA901;
          }
 
          ul li a{
-            position:relative;
-            margin-left:15px;
-            top:10px;
-            height:100%;
-            padding:10px;
-            background-color:yellow;
+            position: relative;
+            top: 10px;
+            width: 100%;
+            padding: 10px;
+            /*background-color: #0489B1;*/
          }
-
-         ul li a:hover{
-            background-color: #fff;
+         
+         hr{
+            margin:3px 5px;
+            color: #fff;
+            height: 2px;
+            background-color: #0489B1;
          }
 
       </style>
@@ -145,19 +161,19 @@
          <nav id="navMainOptions">
             <ul id="ulMainOptions">
                <li>
-                  <a href="https://www.w3schools.com/tags/default.asp"
+                  <a href="https: //www.w3schools.com/tags/default.asp"
                      target="_blank">
                      Guia de refer&ecirc;ncia
                   </a>
                </li>
                <li>
-                  <a href="https://www.google.com"
+                  <a href="https: //www.google.com"
                      target="_blank">
                      Google
                   </a>
                </li>
                <li>
-                  <a href="http://www.csszengarden.com/"
+                  <a href="http: //www.csszengarden.com/"
                      target="_blank">
                      CSS Zen Garden
                   </a>
@@ -166,8 +182,8 @@
          </nav> <!-- <nav id="navMainOptions"> -->
          <section id="sctContent">
             <aside id="asdContentOptions">
-      
-               <ul id="ulLayouts">         
+               <hr />
+               <ul id="ulLayouts">
                   <li>
                      <a href="ws-11187.html"
                         target="_self">
