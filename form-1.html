@@ -14,9 +14,24 @@
 
       <style>
          *{
-/*            margin:0;
-            border:0;
-            padding:0;*/
+            /*            margin:0;
+                        border:0;
+                        padding:0;*/
+         }
+         #divInputs-1{
+            /*            top: 0px;
+                        width: 33%;
+                        float: left;*/
+         }
+         #divInputs-2{
+            /*            top: 0px;
+                        width: 33%;
+                        float: left;*/
+         }
+
+         .divInputs{
+            width:30%;
+            float: left;
          }
       </style>
    </head>
@@ -25,50 +40,147 @@
             name="formSample1"
             action="form-data.php"
             method="GET"> <!-- GET ou POST -->
-         
-         <label id="labelName"
-                for="textName">Nome:</label><br />
-         <input id="textName"
-                name="textName"
-                type="text"
-                placeholder="Digite aqui o seu nome"
-                required /><br />
-         
-         <label id="labelEmailAddress"
-                for="emailEmailAddress">e-mail:</label><br />
-         <input id="emailEmailAddress"
-                name="emailEmailAddress"
-                type="email"
-                placeholder="Digite aqui o seu e-mail"
-                required /><br />
-         
-         <label id="labelGit"
-                for="urlGit">git:</label><br />
-         <input id="urlGit"
-                name="urlGit"
-                type="url"
-                placeholder="Digite aqui o seu git"
-                required /><br />
-         
-         <label id="labelSchedule"
-                for="dateSchedule">Agendar:</label><br />
-         <input id="dateSchedule"
-                name="dateSchedule"
-                type="date"
-                required /><br />
-         
-         <label id="labelAuthenticate"
-                for="passwordAuthenticate">Autenticar:</label><br />
-         <input id="passwordAuthenticate"
-                name="passwordAuthenticate"
-                type="password"
-                required /><br />
-         
-         <input id="submitSend"
-                type="submit"
-                value="Enviar" />
-         
+
+         <div id="divInputs-1"
+              class="divInputs">
+            <label id="labelName"
+                   for="textName">Nome: (text)</label><br />
+            <input id="textName"
+                   name="textName"
+                   type="text"
+                   placeholder="Digite aqui o seu nome"
+                   value="teste-1"
+                   required
+                   title="Nome do usuário"/><br />
+
+            <label id="labelEmailAddress"
+                   for="emailEmailAddress">e-mail: (email)</label><br />
+            <input id="emailEmailAddress"
+                   name="emailEmailAddress"
+                   type="email"
+                   value="teste-1@email.net"
+                   placeholder="Digite aqui o seu e-mail"
+                   required /><br />
+
+            <label id="labelGit"
+                   for="urlGit">git: (url)</label><br />
+            <input id="urlGit"
+                   name="urlGit"
+                   type="url"
+                   placeholder="Digite aqui o seu git" /><br />
+
+            <label id="labelSchedule"
+                   for="dateSchedule">Agendar: (date)</label><br />
+            <input id="dateSchedule"
+                   name="dateSchedule"
+                   type="date" /><br />
+
+            <label id="labelAuthenticate"
+                   for="passwordAuthenticate">Autenticar: (password)</label><br />
+            <input id="passwordAuthenticate"
+                   name="passwordAuthenticate"
+                   type="password"
+                   value="123"
+                   required /><br /><br />
+
+            <label id="labelPreferences"
+                   for="checkboxPreferences-1">Prefer&ecirc;ncias: (checkbox)</label><br />
+            <input id="checkboxPreferences-1"
+                   name="checkboxPreferences[]"
+                   type="checkbox"
+                   value="1" />Churrasco<br />
+            <input id="checkboxPreferences-2"
+                   name="checkboxPreferences[]"
+                   type="checkbox"
+                   value="2" />Pizza<br />
+            <input id="checkboxPreferences-3"
+                   name="checkboxPreferences[]"
+                   type="checkbox"
+                   value="3" />Feijoada<br /><br />
+         </div> <!-- <div id="divInputs-1"> -->
+
+         <div id="divInputs-2"
+              class="divInputs">
+
+            <fieldset>
+               <legend>Op&ccedil;&otilde;es: (radio)</legend>
+               <input id="radioOptions-1"
+                      name="radioOptions"
+                      type="radio"
+                      value="1"
+                      checked /><label for="radioOptions-1">Churrasco</label><br />
+               <input id="radioOptions-2"
+                      name="radioOptions"
+                      type="radio"
+                      value="2" /><label for="radioOptions-2">Pizza</label><br />
+               <input id="radioOptions-3"
+                      name="radioOptions"
+                      type="radio"
+                      value="3" /><label for="radioOptions-3">Feijoada</label><br /><br />
+            </fieldset>
+
+            <label id="labelOptionsDrinks"
+                   for="radioOptionsDrink-1">Op&ccedil;&otilde;es 2: (radio)</label><br />
+            <input id="radioOptionsDrink-1"
+                   name="radioOptionsDrink"
+                   type="radio"
+                   value="1"
+                   checked />Cerveja<br />
+            <input id="radioOptionsDrink-2"
+                   name="radioOptionsDrink"
+                   type="radio"
+                   value="2" />Vodka<br />
+            <input id="radioOptionsDrink-3"
+                   name="radioOptionsDrink"
+                   type="radio"
+                   value="3" />Vinho<br /><br />
+
+            <br />
+            <hr />
+            <input id="submitSend"
+                   type="submit"
+                   value="Enviar (submit)" />
+         </div>
+
+         <div id="divInputs-3"
+              class="divInputs">
+            <label id="labelLargeText"
+                   for="textareaLargeText">&Aacute;rea de Texto: (textarea)</label><br />
+            <textarea id="textareaLargeText"
+                      name="textareaLargeText"
+                      cols="26"
+                      rows="6"
+                      placeholder="Digite aqui o seu texto"></textarea><br /><br />
+
+            <label id="labelComboBox"
+                   for="selectComboBox">Combo box: (select)</label><br />
+            <select id="selectComboBox"
+                    name="selectComboBox">
+               <option value="1">Black</option>
+               <option value="2">White</option>
+               <option value="3">Red</option>
+            </select><br /><br />
+
+            <label id="labelListBox"
+                   for="selectListBox">List box: (select)</label><br />
+            <select id="selectListBox"
+                    name="selectListBox[]"
+                    multiple>
+               <!--               <option value="1">Black</option>
+                              <option value="2">White</option>
+                              <option value="3">Red</option>-->
+               <option >Black</option>
+               <option >White</option>
+               <option >Red</option>
+            </select><br /><br />
+
+
+         </div>
+
       </form>
+      <script type='text/javascript'>
+         //selectComboBox.selectedIndex = -1;
+      </script>
    </body>
 </html>
 
