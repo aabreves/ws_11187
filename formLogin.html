@@ -30,21 +30,21 @@
          }
 
          .divInputs{
-            width:30%;
+            width:48%;
             float: left;
          }
       </style>
    </head>
    <body> <!-- TODO DOCUMENTO HTML TEM UM <body> -->
-      <form id="formSample1"
-            name="formSample1"
+      <form id="formLogin"
+            name="formLogin"
             action="form-data.php"
             method="GET"> <!-- GET ou POST -->
 
          <div id="divInputs-1"
               class="divInputs">
             <label id="labelName"
-                   for="textName">Nome: (text)</label><br />
+                   for="textName">Nome:</label><br />
             <input id="textName"
                    name="textName"
                    type="text"
@@ -53,60 +53,25 @@
                    required
                    title="Nome do usuário"/><br />
 
-            <label id="labelEmailAddress"
-                   for="emailEmailAddress">e-mail: (email)</label><br />
-            <input id="emailEmailAddress"
-                   name="emailEmailAddress"
-                   type="email"
-                   value="teste-1@email.net"
-                   placeholder="Digite aqui o seu e-mail"
-                   required /><br />
-
-            <label id="labelGit"
-                   for="urlGit">git: (url)</label><br />
-            <input id="urlGit"
-                   name="urlGit"
-                   type="url"
-                   placeholder="Digite aqui o seu git" /><br />
-
             <label id="labelAuthenticate"
-                   for="passwordAuthenticate">Autenticar: (password)</label><br />
+                   for="passwordAuthenticate">Senha:</label><br />
             <input id="passwordAuthenticate"
                    name="passwordAuthenticate"
                    type="password"
                    value="123"
                    required /><br /><br />
 
-            <label id="labelPreferences"
-                   for="checkboxPreferences-1">Prefer&ecirc;ncias: (checkbox)</label><br />
-            <input id="checkboxPreferences-1"
-                   name="checkboxPreferences[]"
+            
+            <input id="checkboxRemember"
+                   name="checkboxRemember"
                    type="checkbox"
-                   value="1" />Churrasco<br />
-            <input id="checkboxPreferences-2"
-                   name="checkboxPreferences[]"
-                   type="checkbox"
-                   value="2" />Pizza<br />
-            <input id="checkboxPreferences-3"
-                   name="checkboxPreferences[]"
-                   type="checkbox"
-                   value="3" />Feijoada<br /><br />
+                   value="1" /><label id="labelRemember"
+                                      for="checkboxRemember">Lembre-se</label><br />
             
             <input id="submitSend"
                    type="submit"
                    value="Enviar (submit)" />
          </div> <!-- <div id="divInputs-1"> -->
-
-         <div id="divInputs-2"
-              class="divInputs">
-            <label id="labelLargeText"
-                   for="textareaLargeText">&Aacute;rea de Texto: (textarea)</label><br />
-            <textarea id="textareaLargeText"
-                      name="textareaLargeText"
-                      cols="26"
-                      rows="6"
-                      placeholder="Digite aqui o seu texto"></textarea><br /><br />
-         </div>
 
       </form>
       <script type='text/javascript'>

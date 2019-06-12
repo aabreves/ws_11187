@@ -1,16 +1,151 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
-   <head>
-      <title>TODO supply a title</title>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   </head>
-   <body>
-      <div>TODO write content</div>
-   </body>
+<html lang="pt-br">
+    <head> <!-- TODO DOCUMENTO HTML TEM UM <head> -->
+        <meta charset="UTF-8"/>
+        <meta name="description"
+              content="Free Web tutorials"/>
+        <meta name="keywords"
+              content="HTML,CSS"/>
+        <meta name="author"
+              content="Alessandro Breves"/>
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0"/>
+        <title>webstandards 11187</title>
+
+        <style>
+            *{
+                /*            margin:0;
+                            border:0;
+                            padding:0;*/
+            }
+            #divInputs-1{
+                /*            top: 0px;
+                            width: 33%;
+                            float: left;*/
+            }
+            #divInputs-2{
+                /*            top: 0px;
+                            width: 33%;
+                            float: left;*/
+            }
+
+            .divInputs{
+                width:48%;
+                float: left;
+            }
+        </style>
+    </head>
+    <body> <!-- TODO DOCUMENTO HTML TEM UM <body> -->
+        <form id="formUser"
+              name="formUser"
+              action="form-data.php"
+              method="GET"> <!-- GET ou POST -->
+
+            <div id="divInputs-1"
+                 class="divInputs">
+                <label id="labelUser"
+                       for="textUser">Usu&aacute;rio:</label><br />
+                <input id="textUser"
+                       name="textUser"
+                       type="text"
+                       placeholder="Digite aqui o seu nome de usu&aacute;rio"
+                       value="teste-1"
+                       required
+                       title="Nome do usuário"/><br />
+
+                <label id="labelAddress"
+                       for="emailAddress">e-mail:</label><br />
+                <input id="emailAddress"
+                       name="emailAddress"
+                       type="email"
+                       value="teste-1@email.net"
+                       placeholder="Digite aqui o seu e-mail"
+                       required /><br />
+
+                <label id="labelGit"
+                       for="urlGit">git:</label><br />
+                <input id="urlGit"
+                       name="urlGit"
+                       type="url"
+                       placeholder="Digite aqui o seu git" /><br />
+
+                <label id="labelSecret"
+                       for="passwordSecret">Senha:</label><br />
+                <input id="passwordSecret"
+                       name="passwordSecret"
+                       type="password"
+                       value="123"
+                       required /><br /><br />
+
+                <label id="labelConfirmSecret"
+                       for="passwordConfirmSecret">Confirmar Senha:</label><br />
+                <input id="passwordConfirmSecret"
+                       name="passwordConfirmSecret"
+                       type="password"
+                       value="123"
+                       required /><br /><br />
+            </div> <!-- <div id="divInputs-1"> -->
+
+            <div id="divInputs-2"
+                 class="divInputs">
+
+                <h5>Cursos e Linguagens de Programa&ccedil;&atilde;o:</h5>
+                <ul>
+                    <li><input id="checkboxPreferences-1"
+                               name="checkboxPreferences[]"
+                               type="checkbox"
+                               value="1" /><label id="labelPreferences-1" 
+                                                  for="checkboxPreferences-1">C/C++</label>
+                    </li>
+                    <li><input id="checkboxPreferences-2"
+                               name="checkboxPreferences[]"
+                               type="checkbox"
+                               value="2" /><label id="labelPreferences-2" 
+                                                  for="checkboxPreferences-2">Java</label>
+                    </li>
+                    <li><input id="checkboxPreferences-3"
+                               name="checkboxPreferences[]"
+                               type="checkbox"
+                               value="3" /><label id="labelPreferences-3" 
+                                                  for="checkboxPreferences-3">Python</label>
+                    </li>
+                    <li><input id="checkboxPreferences-4"
+                               name="checkboxPreferences[]"
+                               type="checkbox"
+                               value="4" /><label id="labelPreferences-4" 
+                                                  for="checkboxPreferences-4">PHP</label>
+                    </li>
+                    <li><input id="checkboxPreferences-5"
+                               name="checkboxPreferences[]"
+                               type="checkbox"
+                               value="5" /><label id="labelPreferences-5" 
+                                                  for="checkboxPreferences-5">Webstandards (HTML5 + CSS3)</label>
+                    </li>
+                    <li><input id="checkboxPreferences-6"
+                               name="checkboxPreferences[]"
+                               type="checkbox"
+                               value="6" /><label id="labelPreferences-6" 
+                                                  for="checkboxPreferences-6">Javascript</label>
+                    </li>
+                </ul>
+
+                <input id="submitUser"
+                       type="submit"
+                       value="Enviar" />
+            </div>
+
+        </form>
+        <script type='text/javascript'>
+            //selectComboBox.selectedIndex = -1;
+        </script>
+    </body>
 </html>
+
+
+
+
+
+
+
+
+
