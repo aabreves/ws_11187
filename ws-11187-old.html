@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+   <head> <!-- TODO DOCUMENTO HTML TEM UM <head> -->
+      <meta name="viewport" 
+            content="width=device-width, initial-scale=1.0" />
+      <title>webstandards 11187</title>
+   </head>
+   
+   <body> <!-- TODO DOCUMENTO HTML TEM UM <body> -->
+      <div id="divHome">
+         <ul id="ulOptions">
+            <li>
+               <a href="index.html"
+                  target="_self">
+                  Home
+               </a>
+            </li>
+         </ul>
+      </div>
+      <h3>webstandards 11187</h3>
+      <pre>
+11187
+
+ALESSANDRO BREVES
+
+GIT
+GITHUB OU ...
+GITHUB DESKTOP
+
+HTML
+
+CSS
+
+JAVASCRIPT
+
+URL		localhost
+IP		127.0.0.1
+
+XAMP	C:\xampp\htdocs
+WAMP	c:\wamp\www\html
+LAMP	/var/www/html
+
+
+o apache procura pelo arquivo index (.html, .php, ...)
+
+
+www.w3schools.com	UM BOM GUIA DE REFERÊNCIA
+
+IDE - Integrated Development Environment
+(Ambiente integrado de desenvolvimento)
+
+TAGS ( ou marcadores )
+são elementos pré-definidos que seguem o padrão
+
+&lt;nome_elemento&gt;conteúdo&lt;/nome_elemento&gt;
+
+ou
+
+&lt;nome_elemento /&gt; &lt;!-- elemento sem conteúdo --&gt;
+
+OU
+
+&lt;nome_elemento atributo="valor"&gt;conteúdo&lt;/nome_elemento&gt;
+
+ou
+
+&lt;nome_elemento atributo="valor" /&gt; &lt;!-- elemento sem conteúdo --&gt;
+
+
+
+
+
+Comentários em html:
+
+qualquer conteúdo defindo entre os marcadores
+&lt;!--
+e
+--&gt;
+
+TAGS DO HTML:
+   ESTRUTURAR O DOCUMENTO
+      &lt;div&gt;&lt;/div&gt;
+   
+   ESTRUTURAR TEXTO
+   
+      &lt;pre&gt;&lt;/pre&gt;
+      
+      &lt;h4&gt;&lt;/h4&gt;
+      &lt;p&gt;&lt;/p&gt;
+      &lt;br /&gt;
+      &lt;hr /&gt;
+      
+      
+https://github.com/aabreves/ws_11187
+
+
+INSTALAÇÃO DO IDE
+
+GOOGLE
+   netbeans
+      https://netbeans.apache.org/download/
+         Apache NetBeans 11.0
+            Download
+               Binaries: incubating-netbeans-11.0-bin.zip
+                  MIRROR                  http://ftp.unicamp.br/pub/apache/incubator/netbeans/incubating-netbeans/incubating-11.0/incubating-netbeans-11.0-bin.zip
+
+
+
+
+
+ATIVIDADE:
+
+EM aula-31Mai.html E author.html E modelo.html
+
+No início de cada página criar um &lt;div&gt; com id divHome
+e dentro do div uma lista não ordenada com um item contendo
+o hyperlink para página inicial.
+
+
+CSS
+
+pares atributo:valor
+
+NO ATRIBUTO style DE UM ELEMENTO HTML PODEMOS
+ESPECIFICAR UMA SEQUÊNCIA DE PARES atributo:valor PARA
+ESTILIZAÇÃO DO ELEMENTO
+   CADA ELEMENTO DA SEQUENCIA É FORMADO POR UM PAR atributo:valor
+   CADA ELEMENTO DA SEQUENCIA TERMINA COM ;
+
+** O css DEFINIDO NO ATRIBUTO style DO HTML É CHAMADO DE css inline
+
+ex.
+
+   &lt;tag_html style="attr_css1:valor; attr_css2:valor; attr_css3:valor" &gt;
+
+
+CORES:
+
+   PARA DEFINIÇÃO DE CORES UTILIZAMOS O PADRÃO RGB
+
+   RGB: RED GREEN BLUE (TRÊS CANAIS OU MATIZES)
+
+   CADA COR BÁSICA POR VARIAR DE 0 ATÉ 255 (em decimal) OU
+   DE 0 ATÉ FF (em hexadecimal)
+   - A DEFINIÇÃO DE UMA COR UTILIZANDO NÚMEROS HEXADECIMAIS COMEÇA COM #
+   - A INTENSIDADE DE CADA MATIZ DE COR É DEFINIDA POR UM NÚMERO HEXADECIMAL
+     DE DOIS DIGITOS ( DE 00 ATÉ FF)
+
+   - OS NÚMEROS HEXADECIMAIS SÃO REPRESENTADOS PELOS DIGITOS
+   0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F
+
+   EX - 
+
+      VERMELHO (RED)
+
+      #FF0000
+
+      VERMELHO MAIS ESCURO
+      #AA0000
+
+
+   ATIVIDADE DE PESQUISA:
+
+      >> PESQUISAR SOBRE SISTEMAS DE NUMERAÇÃO
+
+
+
+   CSS
+
+      css inline        =>    atributo style dos elementos html
+
+      css incorporado   =>    <style> </style>
+
+      css externo       =>    <link />
+
+      QUANDO TRABALHAMOS COM O CSS INCORPORADO OU O CSS EXTERNO
+      PRECISAMOS DE UMA FORMA DE ESPECIFICAR (OU SELECIONAR) QUAL 
+      (OU QUAIS) ELEMENTOS SERÃO ESTILIZADOS.
+      
+      ESTA FORMA DE SELECIONAR O(S) ELEMENTO(S) É CHAMADA DE
+      "SELETOR"
+
+      TEMOS TRÊS DE TIPOS DE SELETORES:
+
+         SELETOR POR TAG      - utiliza a própria tag do html;
+         SELETOR POR ID       - utiliza o atributo id dos elementos html;
+         SELETOR POR CLASSE   - utiliza o atributo class dos elementos html;
+      
+      SINTAXE:
+
+         => POR TAG:
+
+         tag{ sequencia de pares atributo:valor }
+
+         => POR ID:
+         
+         #id_value{ sequencia de pares atributo:valor }
+
+         => POR CLASSE:
+
+         .class_name{ sequencia de pares atributo:valor }
+
+
+     PARA FACILITAR A LEITURA DO CÓDIGO, NORMALMENTE ESCREVEMOS O CSS
+     DA SEGUINTE FORMA:
+
+         seletor{
+            attr1:valor;
+            attr2:valor;
+            attr3:valor;
+            ...
+         }
+
+      </pre>
+      <section>
+         <h4>07/JUN</h4>
+         <article>
+            <h5>ATIVIDADE: REFATORAR CSS DO index.html</h5>
+            <Ol>
+               <li>
+                  ABRIR O ARQUIVO index.html E SALVAR COMO index_novo.html
+               </li>
+               <li>
+                  NO ARQUIVO index.html, CRIAR UM ITEM DE MENU DO &lt;aside&gt; PARA index_novo.html COM target="_blank"
+               </li>
+               <li>
+                  REFATORAR O CSS DO index_novo.html
+               </li>
+            </Ol>
+         </article>
+      </section>
+      
+      <section>
+         <h4>10/JUN</h4>
+         
+         <article>
+            <h5>ATIVIDADE: </h5>
+            <Ol>
+               <li>
+                  Colocar todos os inputs (menos o submit) de form-1.html 
+                  dentro de um div com id="divInputs-1"
+               </li>
+               <li>
+                  Colocar o submit dentro de um segundo div, com id="divInputs-2"
+               </li>
+               <li>
+                  Criar um css vazio (por id) para cada div
+                  <pre>
+                  #id-do-elemento{
+                  }
+                  </pre>
+               </li>
+            </Ol>
+         </article>
+
+      </section>
+      
+      <section>
+         <h4>11/JUN</h4>
+         
+         <article>
+            <h5>ATIVIDADE: CRIAR FORMUL&Aacute;RIO DE LOGIN</h5>
+            <Ol>
+               <li>nome do arquivo e id e name do formul&aacute;rio: formLogin
+               </li>
+               <li>Inputs: textUser, passwordSecret, checkboxRemember e submitLogin
+               </li>
+               <li>Incluir item de menu no menu de forms.html
+               </li>
+            </Ol>
+         </article>
+         <article>
+            <h5>ATIVIDADE: CRIAR FORMUL&Aacute;RIO DE CADASTRO DE USU&Aacute;RIO</h5>
+            <Ol>
+               <li>nome do arquivo e id e name do formul&aacute;rio: formUser
+               </li>
+               <li>Inputs: textUser, emailAddress, urlGithub, telWhatsapp,
+                  passwordSecret, passwordConfirmSecret e submitUser
+               </li>
+               <li>Incluir uma lista de prefer&ecirc;ncias para cursos de inform&aacute;tica,
+                  
+               </li>
+               <li>Incluir item de menu no menu de forms.html
+               </li>
+            </Ol>
+         </article>
+         <article>
+            <h5>ATIVIDADE: CRIAR FORMUL&Aacute;RIO DE ENVIO DE EMAIL</h5>
+            <Ol>
+               <li>nome do arquivo e id e name do formul&aacute;rio: formEmail
+               </li>
+               <li>pesquisar modelo
+               </li>
+               <li>Incluir item de menu no menu de forms.html
+               </li>
+            </Ol>
+         </article>
+      </section>
+      
+      <pre>
+         ==============================================
+         =
+         =
+         =
+         =
+         =
+         =
+         =
+         =
+         =
+         =
+         =
+         =
+         =
+         =
+         =
+         =
+         =
+         =
+         =
+         =
+         =
+         =
+         =
+         =
+         =
+         =
+         =
+         =
+         =
+         =
+         =
+      </pre>
+   </body>
+</html>
+
+
+<!-- https://www.google.com/search?source=hp&
+                              ei=8vj6XLSbNZDF5OUP7OqWwAw&
+                              q=wiki&
+                              oq=wiki&
+                              gs_l=psy-ab.12..0l4j0i131j0l5.3844.4682..5880...0.0..0.113.406.2j2......0....1..gws-wiz.....0.EjEU7QTRbJ8
+
+https://translate.google.com.br/?hl=pt-BR&
+                                 tab=wT0                              
+
+https://translate.google.com.br/?hl=pt-BR&
+                                 tab=wT0#view=home&
+                                 op=translate&
+                                 sl=en&
+                                 tl=pt&
+                                 text=translate -->
