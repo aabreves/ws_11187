@@ -52,13 +52,72 @@ h3{
 }
 
 .inner-div{
-   margin:  10px auto;
-   padding: 5px;
+   margin:  10px 0;
+   padding: 0px;
    
    background-color: #585;
    border: 4px outset #bbb;
    
-   /*width: 80%;*/
-   height: 70%;
+   width: 48%;
+   height: 80%;
    text-align: center;
+}
+
+.left-div{
+   float: left;   
+}
+
+.right-div{
+   float: right;
+}
+
+#divLeft{   
+   background-image: url(../media/images/HTML5_CSS3.png);
+   background-repeat: no-repeat;
+   /*background-position: 80px 120px;*/
+   /*background-attachment: fixed;*/
+   
+   background-size: contain; 
+   border-radius: 25px;
+}
+
+#divRight{
+   overflow-y: auto; 
+}
+article{
+   padding: 10px;
+}
+
+article p{
+   font-size: 12px;
+   text-align: justify;
+   margin: 10px 5px;
+}
+
+
+article h5{
+   text-shadow: 2px 2px 3px #CCC;
+}
+
+article li{
+   text-align: justify;
+   margin: 15px;
+   
+   font: italic 10px/14px Georgia, serif;
+   
+   list-style-image: url(../media/images/list-checkmark.png);
+}
+
+span{
+   font-weight: bold;
+}
+
+.underline{
+   font-weight: normal;
+   text-decoration: underline;
+}
+
+.bold-yellow{
+   font-weight: bolder;
+   color: yellow;
 }
