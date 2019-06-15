@@ -13,13 +13,22 @@ and open the template in the editor.
    padding: 0;
 }
 
+html{
+   position: absolute;
+   width: 100%;   
+   background-color: #eee;
+}
+
 body{
-   background-color: #dfd;
+   position: absolute;
+   top: 0;
+   width: calc(100% - 5px);
+   background-color: #fee;
+   border: 2px solid #f00;
 }
 
 #divMain{
    background-color: #000;
-
    margin: 0 auto;
    position: relative;
    width: 90%;
