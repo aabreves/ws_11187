@@ -1,0 +1,88 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 12/06/2019, 20:40:07
+    Author     : Aluno
+*/
+@font-face {
+   font-family: IndieFlower_teste;
+   src: url('../media/fonts/IndieFlower.ttf');
+}
+
+*{
+   margin:  0px;
+   padding: 0px;
+   border:  0px;
+}
+
+html{
+   margin:  5px;
+   padding: 5px;
+   
+   background-color: #ddd;
+   border: 2px solid #fff;
+   
+   height: 94%;
+}
+
+body{
+   margin:  5px;
+   padding: 5px;
+   
+   background-color: #faa;
+   border: 2px solid #f00;
+   
+   height: 94%;
+}
+
+div{
+   margin:  10px auto;
+   padding: 5px;
+   
+   background-color: #afa;
+   border: 2px solid #0f0;
+   
+   width: 90%;
+   height: 90%;
+   text-align: center;
+}
+
+h3{
+   background-color: #fff;
+   font: italic bold 16px/30px Georgia, serif;
+}
+
+.horizontal-div{
+   margin:  10px auto;
+   padding: 0px;
+   
+   background-color: #585;
+   border: 4px outset #bbb;
+   
+   width: 90%;
+   /*height: 80%;*/
+   text-align: center;
+   
+   box-shadow: 5px 5px 5px #383;
+   
+   transition: all 3s ease;
+}
+.horizontal-div:hover{   
+   background-color: #858;
+   border: 4px inset #000;
+      
+   box-shadow: 5px 5px 5px #838;
+}
+
+.first-div{
+   float: top;
+   height: 20%;
+}
+
+.second-div{
+   float: bottom;
+   height: 60%;
+}
