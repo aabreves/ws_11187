@@ -22,7 +22,6 @@ and open the template in the editor.
             margin:5px auto;
             top:60px;
             width:100%;
-            height:100px;
             background-color:#afa;
             border-radius:5px
          }
@@ -36,43 +35,73 @@ and open the template in the editor.
             <a class="navbar-brand" href="#">Logo</a>
 
             <!-- Links -->
-            <ul class="navbar-nav">
+            <ul class="nav nav-item navbar-nav">
                <li class="nav-item">
-                  <a class="nav-link" href="#">Link 1</a>
+                  <a class="nav-link" href="#divContent1" data-toggle="tab">Forms</a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link" href="#">Link 2</a>
+                  <a class="nav-link" href="#divContent2" data-toggle="tab">Carousel</a>
                </li>
 
                <!-- Dropdown -->
-               <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+               <li class="nav nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" 
+                     href="#" 
+                     id="navbardrop" 
+                     data-toggle="dropdown">
                      Dropdown link
                   </a>
                   <div class="dropdown-menu">
                      <a class="dropdown-item" 
                         href="#"
-                        data-target="#divContent1"
-                        data-toggle="collapse">Link 1</a>
+                        data-target="#divContent3"
+                        data-toggle="tab">Accordion</a>
                      <a class="dropdown-item" 
                         href="#"
-                        data-target="#divContent2"
-                        data-toggle="collapse">Link 2</a>
-                     <a class="dropdown-item" 
-                        href="#divContent3"
-                        data-toggle="collapse">Link 3</a>
+                        data-target="#divContent4"
+                        data-toggle="tab">Modal</a>
+                     <a class="dropdown-item"  
+                        href="#"
+                        data-target="#divContent5"
+                        data-toggle="tab">teste 5</a>
                   </div>
                </li>
             </ul>
          </nav>
          
-         <div class="container">
+         <div class="container tab-content">
             <div id="divContent1"
-                  class="collapse">Content1</div>
+                  class="tab-pane fade in active">
+               <?php
+               require_once 'form_bootstrap4.php';
+               ?>
+            </div>
             <div id="divContent2"
-                  class="collapse">Content2</div>
+                  class="tab-pane fade">
+               <?php
+               require_once 'carousel_bootstrap4.php';
+               ?>
+            </div>
             <div id="divContent3"
-                  class="collapse">Content3</div>
+                  class="tab-pane fade">
+               <?php
+               require_once 'accordion_bootstrap4.html';
+               ?>
+            </div>
+            <div id="divContent4"
+                  class="tab-pane fade">
+               <h4>MODAL DIALOG</h4>
+               <?php
+               require_once 'modal_bootstrap4.html';
+               ?>
+            </div>
+            <div id="divContent5"
+                  class="tab-pane fade">
+               <h4><a href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_scrollspy&stacked=h">VEJAM ESTE EXEMPLO</a></h4>
+               <?php
+               //require_once 'accordion_bootstrap4.html';
+               ?>
+            </div>
          </div>
       </div> <!-- <div id="divMain"> -->
    </body>
